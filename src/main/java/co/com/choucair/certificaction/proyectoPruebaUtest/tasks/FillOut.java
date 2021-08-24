@@ -25,7 +25,7 @@ public class FillOut implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(BUTTON_LOCATION),
                 Enter.theValue(utestData.getStrCity()).into(INPUT_CITY),
-                Hit.the(Keys.ARROW_DOWN,Keys.ARROW_DOWN, Keys.ENTER).into(INPUT_CITY),
+                Hit.the(Keys.ARROW_DOWN, Keys.ENTER).into(INPUT_CITY),
                 Enter.theValue(utestData.getStrCodePostal()).into(INPUT_CODE_POSTAL),
                 Click.on(OPTION_COUNTRY),
                 Enter.theValue(utestData.getStrCountry()).into(INPUT_COUNTRY).thenHit(Keys.ENTER)
