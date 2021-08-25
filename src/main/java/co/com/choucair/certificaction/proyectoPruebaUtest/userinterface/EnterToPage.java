@@ -18,4 +18,7 @@ public class EnterToPage {
             .located(By.id("privacySetting"));
     public static final Target BUTTON_SEND_INFORMATION = Target.the("Button get form information Security")
             .located(By.xpath("//*[@id=\"laddaBtn\"]"));
+    public static final Target MESSAGE_WELCOME = Target.the("Get name message welcome")
+            .located(By.xpath("//h1[contains(text(),'Welcome to the world's largest community of freelance software testers!')]"));
+
 }
